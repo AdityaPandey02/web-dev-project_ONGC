@@ -1,5 +1,5 @@
 import React from 'react';
-import './CollapsibleSidebar.css'; // Import CSS file for styling
+import './Dashboard.css'; // Import CSS file for styling
 
 function CollapsibleSidebar() {
   return (
