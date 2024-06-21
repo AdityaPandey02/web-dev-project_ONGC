@@ -1,13 +1,20 @@
 import './App.css';
-import Navbar from './Components/Navbar';
-import Dashboard from './Components/Dashboard'
+import Login from './login'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Signup from './signup'
+import CollapsibleSidebar from './Components/Dashboard'
+
 function App() {
+  
   return (
-    <>
-      <Navbar title="ONGC"/>
-      <Dashboard/>
-    </>
-  );
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login />}></Route>
+          <Route path='/signup' element={<Signup />}></Route>
+          <Route path="/dashboard" element={<CollapsibleSidebar />}></Route>
+        </Routes>
+      </BrowserRouter>
+  )
 }
 
 export default App;
